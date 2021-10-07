@@ -30,7 +30,6 @@ class Human {
         this.age = age;
     }
 
-    //toStringメソッド
     @Override
     public String toString() {
         return "Human{" +
