@@ -7,6 +7,7 @@ class HumanSample {
         Human human2 = new Human("Nancy",16);
 
         //インスタンスの利用
+
         //値の取得
         System.out.println(human1.getName());//Tom
         System.out.println(human1.getAge());//28
