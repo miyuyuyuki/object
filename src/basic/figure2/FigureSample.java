@@ -1,0 +1,26 @@
+package basic.figure2;
+
+public class FigureSample {
+    public static void main(String[] args) {
+        Figure[] figures = {
+                new Rectangle(10,20),
+                new Triangle(10,20),
+                new Circle(10)
+        };
+
+        for(Figure figure:figures) {
+            System.out.println(figure);
+        }
+
+
+
+        Rectangle r1 = new Rectangle(10,20);
+        System.out.println(r1);
+
+        Triangle t1 = new Triangle(10,20);
+        System.out.println(t1);
+
+        Circle c1 = new Circle(10);
+        System.out.println(c1);
+    }
+}
