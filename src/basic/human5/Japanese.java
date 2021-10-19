@@ -1,10 +1,11 @@
-package basic.human3;
+package basic.human5;
 
 //日本人クラス
-class Japanese extends Human{
+class Japanese implements IfSayHello {
+    private String name;
     //コンストラクタ
     public Japanese(String name) {
-        super(name);//Human(name)と同じ 継承（スーパークラス）を呼び出している
+        this.name = name;
     }
 
     @Override
