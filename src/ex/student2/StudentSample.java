@@ -1,5 +1,7 @@
 package ex.student2;
 
+import basic.Sample.enumSample.Gender;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,15 +10,15 @@ import java.util.List;
 public class StudentSample {
     public static void main(String[] args) {
 
-        List<Gender> students = new ArrayList<>();
+        List<Student> students = new ArrayList<>();
         students.addAll(Arrays.asList(
-                new Student("いのうえ","女", 98, 80, 100),
-                new Student("うえの","男", 40, 50, 60),
-                new Student("えんどう","女", 80, 20, 60),
-                new Student("おおた","男", 70, 100, 40)
+                new Student("いのうえ", Gender.MEN, 98, 80, 100),
+                new Student("うえの",Gender.WOMEN, 40, 50, 60),
+                new Student("えんどう",Gender.MEN, 80, 20, 60),
+                new Student("おおた",Gender.WOMEN, 70, 100, 40)
         ));
 
-        for (Gender student : students) {
+        for (Student student : students) {
             System.out.println(student);
         }
     }
