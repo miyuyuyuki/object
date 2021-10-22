@@ -20,6 +20,7 @@ class HashMapSample {
         //値の集合の取得
         System.out.println(map.values());//[オレンジ, りんご, パイナップル]
         //キーと値を取得
+        //（Entryは、key:値をセットと考える）
         for (Map.Entry entry:map.entrySet()){
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
@@ -33,7 +34,7 @@ class HashMapSample {
         System.out.println(map.put("apple", "リンゴ"));//りんご
         //表示
         System.out.println(map);//{apple=リンゴ, pineapple=パイナップル}
-        //
+        //キーによる検索
         String searchWord = "orange";
         if(map.containsKey(searchWord)) {
             System.out.println(map.get(searchWord));

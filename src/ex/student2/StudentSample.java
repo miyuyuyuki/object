@@ -17,7 +17,7 @@ public class StudentSample {
                 new Student("えんどう",Gender.MEN, 80, 20, 60),
                 new Student("おおた",Gender.WOMEN, 70, 100, 40)
         ));
-
+        System.out.println("課題1/n");
         for (Student student : students) {
             System.out.println(student);
         }
