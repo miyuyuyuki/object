@@ -1,6 +1,6 @@
-package basic.Sample.sort;
+package Sample.sort;
 
-import basic.Sample.enumSample.Gender;
+import Sample.enumSample.Gender;
 
 //学生クラス
 class Student implements Comparable<Student> {

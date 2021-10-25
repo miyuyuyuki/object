@@ -1,9 +1,11 @@
-package basic.Sample.equals;
+package Sample.equals;
+
+import Sample.equals.Employee;
 
 public class EqualsSample {
     public static void main(String[] args) {
         Employee employee1 = new Employee(1,"Tom");
-        Employee employee2 = employee1;
+        Employee employee2 = employee1;//同じオブジェクトを意味する
         Employee employee3 = new Employee(2,"John");
         Employee employee4 = new Employee(1,"Tom");
         Employee2 employee21 = new Employee2(1,"Tom");

@@ -1,9 +1,11 @@
-package basic.Sample.enumSample;
+package sample.enumsample;
+
+import Sample.enumSample.Gender;
 
 class Human {
     private String name;
-    private  Gender gender;  //Stringじゃない！
-    private  int age;
+    private Gender gender;
+    private int age;
 
     public Human(String name, Gender gender, int age) {
         this.name = name;

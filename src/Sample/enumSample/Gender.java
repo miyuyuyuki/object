@@ -1,6 +1,6 @@
-package basic.Sample.enumSample;
+package Sample.enumSample;
 
-public enum Gender {  //class → enum
+public enum Gender {
     MEN("男"),
     WOMEN("女");
 

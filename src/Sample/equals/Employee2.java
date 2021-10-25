@@ -1,4 +1,4 @@
-package basic.Sample.equals;
+package Sample.equals;
 
 import java.util.Objects;
 
@@ -20,10 +20,10 @@ class Employee2 {
                 '}';
     }
 
-    @Override
+    @Override//等価演算
     public boolean equals(Object o) {   // object o :すべてのobject
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) return false;//不一致ではない　⇒false
             //getClass():クラス名をとってくるメソッド
         Employee2 employee = (Employee2) o;//(Employee):キャスト
         return id == employee.id && Objects.equals(name, employee.name);

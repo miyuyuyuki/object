@@ -1,6 +1,6 @@
 package ex.person;
 
-import basic.Sample.enumSample.Gender;
+import Sample.enumSample.Gender;
 
 import java.util.ArrayList;
 import java.util.Arrays;

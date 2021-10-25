@@ -1,6 +1,6 @@
 package ex.student2;
 
-import basic.Sample.enumSample.Gender;
+import Sample.enumSample.Gender;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
