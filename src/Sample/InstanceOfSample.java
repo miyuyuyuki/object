@@ -1,4 +1,4 @@
-package basic.Sample;
+package Sample;
 
 class SuperClass {}
 

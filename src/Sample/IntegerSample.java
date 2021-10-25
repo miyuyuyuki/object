@@ -1,4 +1,4 @@
-package basic.Sample;
+package Sample;
 
 //ラッパークラスの利用
 //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Integer.html

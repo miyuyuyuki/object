@@ -1,4 +1,4 @@
-package basic.Sample;
+package Sample;
 
 public class StaticSample {
     /**
@@ -12,7 +12,7 @@ public class StaticSample {
     }
 
     public static void main(String[] args) {
-        System.out.println(StaticSample.add(10,20));//30
+        System.out.println(add(10,20));//30
         int ans = add(100,50);
         System.out.println(ans);
     }
