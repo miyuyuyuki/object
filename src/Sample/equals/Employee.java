@@ -1,4 +1,4 @@
-package basic.Sample.equals;
+package Sample.equals;
 
 import java.util.Objects;
 

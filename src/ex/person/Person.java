@@ -1,6 +1,6 @@
 package ex.person;
 
-import basic.Sample.enumSample.Gender;
+import Sample.enumSample.Gender;
 
 class Person {
     private  String name;

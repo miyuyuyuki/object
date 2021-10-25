@@ -1,6 +1,6 @@
 package ex.student2;
 
-import basic.Sample.enumSample.Gender;
+import Sample.enumSample.Gender;
 
 class Student {
     //フィールド
