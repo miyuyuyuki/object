@@ -48,6 +48,20 @@ public class StudentMapSample {
             for(Student student:list){
                 System.out.println(student);
             }
+//            1-1 やまだ 男 60 50 70 180 60.0
+//            1-1 たけだ 女 70 100 30 200 66.7
+//            1-1 かまだ 男 100 80 90 270 90.0
+//            1-2 いいだ 男 70 90 50 210 70.0
+//            1-2 やすだ 女 60 70 80 210 70.0
+//            1-2 わしだ 男 0 20 80 100 33.3
+//            1-3 たかだ 女 70 100 50 220 73.3
+//            1-3 かねだ 女 60 70 80 210 70.0
+//            1-4 さとう 男 70 90 50 210 70.0
+//            1-4 すずき 女 60 70 80 210 70.0
+//            1-4 たかはし 男 0 20 80 100 33.3
+//            1-5 ふるた 女 70 100 50 220 73.3
+//            1-5 たがみ 女 60 70 80 210 70.0
+//            1-5 あいもの 女 40 40 50 130 43.3
         }
 
         for (Map.Entry entry : studentGroupMap.entrySet()) {
@@ -62,6 +76,11 @@ public class StudentMapSample {
             double aveEng = sumEng / ((List<?>) entry.getValue()).size();
 
             System.out.println(String.format("%s %.2f %.2f %.2f",entry.getKey(),aveJap,aveMath,aveEng));
+//            1-1 76.67 76.67 63.33
+//            1-2 43.33 60.00 70.00
+//            1-3 65.00 85.00 65.00
+//            1-4 43.33 60.00 70.00
+//            1-5 56.67 70.00 60.00
         }
     }
 }
