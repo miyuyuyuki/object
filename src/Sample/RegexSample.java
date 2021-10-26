@@ -17,7 +17,7 @@ class RegexSample {
         String zip2 = "0000-888";
         System.out.println(zip2.matches(regex));//false(4桁－3桁のため）
 
-        //
+        //正規表現の準備
         Pattern pattern = Pattern.compile("^[0-9]{3}-[0-9]{4}$");
         Matcher matcher = pattern.matcher(zip1);
         List<String> zipList = List.of("064-0809","0000-888");
@@ -30,5 +30,7 @@ class RegexSample {
                 System.out.println(zip + ":ng");
             }
         }
+        //064-0809:ok
+        //0000-888:ng
     }
 }
