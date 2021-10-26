@@ -1,4 +1,4 @@
-package basic.Sample;
+package Sample;
 
 interface IfTax {
     double TAX = 0.1;
