@@ -59,7 +59,52 @@ class ViewStock {
             System.out.println(entry.getValue());
         }
 
+        //storagePriceMapからさらに計算を行う
+        //倉庫ごとのPC合計金額を計算して表示
+        System.out.println("//倉庫ごとの合計金額");
+        for(Map.Entry entry: storagePriceMap.entrySet()){
+            double sum = 0;//合計を入れる変数を定義する
+            for (Integer i :(List<Integer>)entry.getValue()){
+                sum += i;
+            }
+            System.out.println("倉庫番号" + entry.getKey());
+            System.out.println("合計金額" + sum + "円");
+        }
+        //倉庫ごとの合計金額
+//        倉庫番号1
+//        合計金額210000.0円
+//                倉庫番号2
+//        合計金額300000.0円
+//                倉庫番号3
+//        合計金額110000.0円
 
+        //合計台数を表示
+        System.out.println("//倉庫ごとの合計台数");
+        for (Map.Entry entry: storagePriceMap.entrySet()){
+            int cnt = ((List)entry.getValue()).size();//合計台数
+            System.out.println("倉庫番号" + entry.getKey() + ":");
+            System.out.println("合計台数" + cnt + "台");
+        }
+        //倉庫ごとの合計台数
+//        倉庫番号1:
+//        合計台数3台
+//        倉庫番号2:
+//        合計台数3台
+//        倉庫番号3:
+//        合計台数2台
+
+        //倉庫別に1台ごとの平均金額を表示
+        System.out.println("//倉庫内の1台ごとの平均金額");
+        for (Map.Entry entry : storagePriceMap.entrySet()){
+            double sum = 0;//合計
+            int cnt = ((List)entry.getValue()).size();//合計台数
+            double avg = sum / (int) cnt;
+            for (Integer i :(List<Integer>)entry.getValue()){
+                sum += i;
+            }
+            System.out.println("倉庫番号" + entry.getKey() + ":");
+            System.out.println("平均金額"+ avg + "円");
+        }
     }
 
 }
